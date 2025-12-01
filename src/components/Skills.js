@@ -36,29 +36,23 @@ export const Skills = () => {
 					<Col>
 						<div className="skill-bx">
 							<h2>Skills</h2>
-							<p>Web Development, Software Development, Database Query Optimization, Graphic Design</p>
+							<p>Web Development, Software Development, Data Structures, API Design, UI/UX Design</p>
 							<Carousel responsive={responsive} infinite={true} className="skill-slider">
-								<div className="item">
+								<div className="item justify-content-center align-items-center d-flex flex-column gap-3">
 									<TrackVisibility>
-										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
+										{({ isVisible }) => <img src={meter3} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
 									</TrackVisibility>
-									<h5>PHP</h5>
+									{/* <div
+										className={`border border-5 rounded-circle justify-content-center align-items-center d-flex font-weight-bold fs-3 ${"animate__animated animate__rotateIn"}`}
+										style={{ width: "50%", aspectRatio: "1/1" }}
+									>
+										85%
+									</div> */}
+									<h5>PHP - Laravel</h5>
 								</div>
 								<div className="item">
 									<TrackVisibility>
-										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
-									</TrackVisibility>
-									<h5>Laravel</h5>
-								</div>
-								<div className="item">
-									<TrackVisibility>
-										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
-									</TrackVisibility>
-									<h5>CodeIgniter</h5>
-								</div>
-								<div className="item">
-									<TrackVisibility>
-										{({ isVisible }) => <img src={meter2} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
+										{({ isVisible }) => <img src={meter3} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
 									</TrackVisibility>
 									<h5>React</h5>
 								</div>
@@ -66,25 +60,7 @@ export const Skills = () => {
 									<TrackVisibility>
 										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
 									</TrackVisibility>
-									<h5>Bootstrap</h5>
-								</div>
-								<div className="item">
-									<TrackVisibility>
-										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
-									</TrackVisibility>
 									<h5>MySQL</h5>
-								</div>
-								<div className="item">
-									<TrackVisibility>
-										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
-									</TrackVisibility>
-									<h5>VB.NET</h5>
-								</div>
-								<div className="item">
-									<TrackVisibility>
-										{({ isVisible }) => <img src={meter3} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
-									</TrackVisibility>
-									<h5>C#</h5>
 								</div>
 								<div className="item">
 									<TrackVisibility>
@@ -96,13 +72,25 @@ export const Skills = () => {
 									<TrackVisibility>
 										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
 									</TrackVisibility>
+									<h5>Tailwind CSS</h5>
+								</div>
+								<div className="item">
+									<TrackVisibility>
+										{({ isVisible }) => <img src={meter3} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
+									</TrackVisibility>
+									<h5>Bootstrap</h5>
+								</div>
+								<div className="item">
+									<TrackVisibility>
+										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
+									</TrackVisibility>
 									<h5>Figma</h5>
 								</div>
 								<div className="item">
 									<TrackVisibility>
 										{({ isVisible }) => <img src={meter1} alt="meter" className={isVisible ? "animate__animated animate__rotateIn" : ""} />}
 									</TrackVisibility>
-									<h5>Photoshop</h5>
+									<h5>Postman</h5>
 								</div>
 							</Carousel>
 						</div>
