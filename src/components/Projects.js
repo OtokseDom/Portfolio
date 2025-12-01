@@ -26,7 +26,7 @@ export const Projects = () => {
 	const projects = [
 		{
 			title: "Log In Page",
-			description: "visit bucsrdms.com",
+			description: "visit otokse.lidta.com",
 			imgUrl: projImg1,
 		},
 		{
@@ -56,6 +56,38 @@ export const Projects = () => {
 		},
 	];
 	const projects2 = [
+		{
+			title: "Log In Page",
+			description: "visit csrdms.bicol-u.edu.ph",
+			imgUrl: projImg1,
+		},
+		{
+			title: "Home Page",
+			description: "Announcement and Graphical Reports. There's dark mode too!",
+			imgUrl: projImg2,
+		},
+		{
+			title: "Research List",
+			description: "Datatable.JS table with filter and export filtered as XLSX file",
+			imgUrl: projImg3,
+		},
+		{
+			title: "Add Research From",
+			description: "Validated in frontend and backend. Select2 package for dropdowns and multi-select inputs",
+			imgUrl: projImg4,
+		},
+		{
+			title: "Activity Logs",
+			description: "Monitoring user activities with update details",
+			imgUrl: projImg5,
+		},
+		{
+			title: "Settings",
+			description: "For dynamically managing contents and information that appears on selections and displays",
+			imgUrl: projImg6,
+		},
+	];
+	const projects3 = [
 		{
 			title: "Landing Page",
 			description: "Overview, Top Destinations, Top Tour Operators, Footer",
@@ -87,7 +119,7 @@ export const Projects = () => {
 			imgUrl: projImg2_6,
 		},
 	];
-	const projects3 = [
+	const projects4 = [
 		{
 			title: "Sign In Page",
 			description: "With restore database feature, sign up, and forgot password option",
@@ -139,13 +171,16 @@ export const Projects = () => {
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
 								<Nav.Item>
-									<Nav.Link eventKey="first">CodeIgniter</Nav.Link>
+									<Nav.Link eventKey="first">Project Management Web App (2025)</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">Laravel</Nav.Link>
+									<Nav.Link eventKey="second">Research Document Management System (2023-2024)</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">VB.NET</Nav.Link>
+									<Nav.Link eventKey="third">Tourism Website - Capstone (2022)</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link eventKey="fourth">School Events Attendance System (2022)</Nav.Link>
 								</Nav.Item>
 							</Nav>
 							<Tab.Content>
@@ -162,7 +197,7 @@ export const Projects = () => {
 								<Tab.Pane eventKey="second">
 									<Row>
 										<Col xs={12}>
-											<p className="justify-content-center align-items-center mt-0">Lakbay Agapay: Tourism Website (Thesis)</p>
+											<p className="justify-content-center align-items-center mt-0">BUCS - Research Document Management System (Live)</p>
 										</Col>
 										{projects2.map((project, index) => {
 											return <ProjectCard key={index} {...project} />;
@@ -172,9 +207,19 @@ export const Projects = () => {
 								<Tab.Pane eventKey="third">
 									<Row>
 										<Col xs={12}>
-											<p className="justify-content-center align-items-center mt-0">Event Attendance System (Academic Requirement)</p>
+											<p className="justify-content-center align-items-center mt-0">Lakbay Agapay: Tourism Website (Thesis)</p>
 										</Col>
 										{projects3.map((project, index) => {
+											return <ProjectCard key={index} {...project} />;
+										})}
+									</Row>
+								</Tab.Pane>
+								<Tab.Pane eventKey="fourth">
+									<Row>
+										<Col xs={12}>
+											<p className="justify-content-center align-items-center mt-0">Event Attendance System (Academic Requirement)</p>
+										</Col>
+										{projects4.map((project, index) => {
 											return <ProjectCard key={index} {...project} />;
 										})}
 									</Row>
