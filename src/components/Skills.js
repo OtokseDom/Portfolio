@@ -36,7 +36,7 @@ export const Skills = () => {
 					<Col>
 						<div className="skill-bx">
 							<h2>Skills</h2>
-							<p>Web Development, Software Development, Data Structures, API Design, UI/UX Design</p>
+							<p>Full Stack Development, Data Structures, API Design, UI/UX Design, Deployment, Project Management</p>
 							<Carousel responsive={responsive} infinite={true} className="skill-slider">
 								<div className="item justify-content-center align-items-center d-flex flex-column gap-3">
 									<TrackVisibility>

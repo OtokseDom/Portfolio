@@ -19,46 +19,52 @@ import projImg3_3 from "../assets/img/Project3-3.png";
 import projImg3_4 from "../assets/img/Project3-4.png";
 import projImg3_5 from "../assets/img/Project3-5.png";
 import projImg3_6 from "../assets/img/Project3-6.png";
+import projImg4_1 from "../assets/img/project-management/Dashboard.png";
+import projImg4_2 from "../assets/img/project-management/Calendar.png";
+import projImg4_3 from "../assets/img/project-management/Week-View.png";
+import projImg4_4 from "../assets/img/project-management/Kanban.png";
+import projImg4_5 from "../assets/img/project-management/Task-List.png";
+import projImg4_6 from "../assets/img/project-management/User-Profile.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
 	const projects = [
 		{
-			title: "Log In Page",
-			description: "visit otokse.lidta.com",
-			imgUrl: projImg1,
+			title: "Dashboard",
+			description: "Overall organizational project summary and statistics",
+			imgUrl: projImg4_1,
 		},
 		{
-			title: "Home Page",
-			description: "Announcement and Graphical Reports. There's dark mode too!",
-			imgUrl: projImg2,
+			title: "Calendar View",
+			description: "Calendar view of tasks per user",
+			imgUrl: projImg4_2,
 		},
 		{
-			title: "Research List",
-			description: "Datatable.JS table with filter and export filtered as XLSX file",
-			imgUrl: projImg3,
+			title: "Week View",
+			description: "Week view of tasks per user",
+			imgUrl: projImg4_3,
 		},
 		{
-			title: "Add Research From",
-			description: "Validated in frontend and backend. Select2 package for dropdowns and multi-select inputs",
-			imgUrl: projImg4,
+			title: "Kanban Board",
+			description: "Drag-and-Drop kanban board for tasks",
+			imgUrl: projImg4_4,
 		},
 		{
-			title: "Activity Logs",
-			description: "Monitoring user activities with update details",
-			imgUrl: projImg5,
+			title: "Task List",
+			description: "Task list with filter, list view, and datatable view",
+			imgUrl: projImg4_5,
 		},
 		{
-			title: "Settings",
-			description: "For dynamically managing contents and information that appears on selections and displays",
-			imgUrl: projImg6,
+			title: "User Profile",
+			description: "User specific reports and information",
+			imgUrl: projImg4_6,
 		},
 	];
 	const projects2 = [
 		{
 			title: "Log In Page",
-			description: "visit csrdms.bicol-u.edu.ph",
+			description: "Authentication with Google OAuth integration",
 			imgUrl: projImg1,
 		},
 		{
@@ -171,23 +177,42 @@ export const Projects = () => {
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
 								<Nav.Item>
-									<Nav.Link eventKey="first">Project Management Web App (2025)</Nav.Link>
+									<Nav.Link eventKey="first">
+										⭐ Project Management Web App <span className="text-secondary">(2025)</span>
+									</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">Research Document Management System (2023-2024)</Nav.Link>
+									<Nav.Link eventKey="second">
+										Research Document Management System <span className="text-secondary">(2023-2024)</span>
+									</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">Tourism Website - Capstone (2022)</Nav.Link>
+									<Nav.Link eventKey="third">
+										Tourism Website - Capstone <span className="text-secondary">(2022)</span>
+									</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="fourth">School Events Attendance System (2022)</Nav.Link>
+									<Nav.Link eventKey="fourth">
+										School Events Attendance System <span className="text-secondary">(2022)</span>
+									</Nav.Link>
 								</Nav.Item>
 							</Nav>
 							<Tab.Content>
 								<Tab.Pane eventKey="first">
 									<Row>
 										<Col xs={12}>
-											<p className="justify-content-center align-items-center mt-0">BUCS - Research Document Management System (Live)</p>
+											<p className="d-flex flex-column justify-content-center align-items-center mt-0">
+												<a
+													href="https://otokse.lidta.com"
+													target="_BLANK"
+													className="justify-content-center align-items-center mt-0 fs-6"
+												>
+													otokse.lidta.com
+												</a>
+												<span className="fs-6 text-secondary">Made with Laravel & React</span>
+												<span>Modern and responsive web app to manage projects and tasks.</span>
+												<span>A personal project built end-to-end.</span>
+											</p>
 										</Col>
 										{projects.map((project, index) => {
 											return <ProjectCard key={index} {...project} />;
@@ -197,7 +222,17 @@ export const Projects = () => {
 								<Tab.Pane eventKey="second">
 									<Row>
 										<Col xs={12}>
-											<p className="justify-content-center align-items-center mt-0">BUCS - Research Document Management System (Live)</p>
+											<p className="d-flex flex-column justify-content-center align-items-center mt-0">
+												<a
+													href="https://csrdms.bicol-u.edu.ph"
+													target="_BLANK"
+													className="justify-content-center align-items-center mt-0 fs-6"
+												>
+													csrdms.bicol-u.edu.ph
+												</a>
+												<span className="fs-6 text-secondary">Made with Codeigniter & Alpin.Js</span>
+												<span>My first official copyrighted project for Bicol University R&D</span>
+											</p>
 										</Col>
 										{projects2.map((project, index) => {
 											return <ProjectCard key={index} {...project} />;
@@ -207,7 +242,7 @@ export const Projects = () => {
 								<Tab.Pane eventKey="third">
 									<Row>
 										<Col xs={12}>
-											<p className="justify-content-center align-items-center mt-0">Lakbay Agapay: Tourism Website (Thesis)</p>
+											<p className="justify-content-center align-items-center mt-0">Lakbay Agapay: Tourism Website (Capstone)</p>
 										</Col>
 										{projects3.map((project, index) => {
 											return <ProjectCard key={index} {...project} />;

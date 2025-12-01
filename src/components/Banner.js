@@ -8,9 +8,9 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = ["Web Developer", "Software Developer", "Full Stack Developer"];
+	const toRotate = ["Full Stack Developer", "Project Manager", "UI/UX Designer"];
 	const [text, setText] = useState("");
-	const [delta, setDelta] = useState(200 - Math.random() * 100);
+	const [delta, setDelta] = useState(100 - Math.random() * 100);
 	const period = 1500;
 	const [activeLink, setActiveLink] = useState("home");
 	const onUpdateActiveLink = (value) => {
@@ -57,23 +57,15 @@ export const Banner = () => {
 						<TrackVisibility>
 							{({ isVisible }) => (
 								<div className={isVisible ? "animate__animated animate__pulse" : ""}>
-									<span className="tagline">Made with React</span>
+									<span className="tagline">Welcome!</span>
 									<h1 className="txt-rotate">
 										{`Hi I'm Dominic`}
 										<br />
-										<span className="wrap">{text}</span>
+										<span className="wrap fs-1">{text}</span>
 									</h1>
 									<p>
-										{/* Passionate about driving innovation and adding value to organizations, I am an IT graduate with expertise in web
-										development, software development, and project management, possessing exceptional analytical and problem-solving
-										capabilities. */}
-										A passionate and result-driven web developer dedicated to creating extraordinary online experiences. With boundless
-										enthusiasm and a commitment to excellence, I approach every project with meticulous effort and consistency. My mission
-										is to transform ideas into stunning, functional websites that exceed expectations.
-										{/* <p>
-													Let's collaborate to push the boundaries of web development, crafting innovative solutions that drive
-													success and leave a lasting impact. Welcome to a space where your vision meets my expertise.
-												</p> */}
+										Analytical problem solver, proactive and adaptable, who works respectfully in teams, leads effectively, and approaches
+										challenges with flexibility and kindness.
 									</p>
 									<Nav>
 										<Nav.Link
