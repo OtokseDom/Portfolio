@@ -230,7 +230,7 @@ export const Projects = () => {
 												>
 													csrdms.bicol-u.edu.ph
 												</a>
-												<span className="fs-6 text-secondary">Made with Codeigniter & Alpin.Js</span>
+												<span className="fs-6 text-secondary">Made with Codeigniter & Alpine.Js</span>
 												<span>My first official copyrighted project for Bicol University R&D</span>
 											</p>
 										</Col>
